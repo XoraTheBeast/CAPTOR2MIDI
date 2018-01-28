@@ -3,10 +3,7 @@
 from rtmidi import (API_UNIX_JACK, MidiOut)
 from statistics import mean
 import time
-import imutils
-import numpy as np
 import cv2
-import copy
 
 #Création de variables Midi et CV2
 
@@ -15,7 +12,7 @@ available_ports = midiout.get_ports()
 print(available_ports)
 midiout.open_port(1)
 
-min_area = 300
+min_area = 500
 resolutionX = 640
 resolutionY = 480
 cap = cv2.VideoCapture(0)
